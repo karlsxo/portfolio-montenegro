@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Caveat', cursive;
+  background: #5a0a1d; /* dark red background */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.about-container {
+  background: #fef9e6; /* light cream */
+  color: #111;
+  width: 800px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Section general */
+.about-section {
+  padding: 20px 0;
+  border-bottom: 2px dashed #5a0a1d;
+}
+
+.about-section:last-of-type {
+  border-bottom: none;
+}
+
+.about-section h1,
+.about-section h2 {
+  margin: 0 0 15px;
+  font-weight: bold;
+  color: #111;
+}
+
+.about-section h1 {
+  font-size: 2em;
+}
+
+.about-section h2 {
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Intro */
+.intro-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-pic {
+  width: 160px;
+  height: auto;
+  display: block;
+}
+
+.intro-content p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: 1.1em;
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Footer */
+.about-footer {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 10px;
+  color: #5a0a1d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-home:hover {
+  color: #d62839;
+}
