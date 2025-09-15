@@ -6,74 +6,90 @@
   <title>About Me - Karlo</title>
   <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="about-container">
-    <!-- Intro Section -->
-    <section class="about-section intro">
-      <h1>Hey! It’s me :&gt;</h1>
-      <div class="intro-content">
-        <img src="Portunif.png" alt="Karlo Picture" class="about-pic">
-        <p>
-          I’m Karlo, but my friends call me King.  
-          Welcome to my personal website.  
-          <br><strong>Enjoy and discover more about me!</strong>
-        </p>
+    <header class="menu-header">
+      <h1>Hey! It's me :></h1>
+      <div class="decorative-line"></div>
+    </header>
+
+    <section class="profile-section">
+      <div class="profile-grid">
+        <div class="profile-image">
+          <img src="Portunif.png" alt="Karlo Picture" class="about-pic">
+        </div>
+        <div class="profile-info">
+          <p class="description">I'm Karlo, but my friends call me King.<br>Welcome to my personal website.</p>
+          <div class="basic-info">
+            <p><i class="fas fa-birthday-cake"></i> March 14, 2004</p>
+            <p><i class="fas fa-map-marker-alt"></i> Intao, Laua-an, Antique</p>
+            <p><i class="fas fa-envelope"></i> karlo@email.com</p>
+          </div>
+          <div class="social-links">
+            <a href="https://facebook.com/yourusername" class="social-link">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://instagram.com/yourusername" class="social-link">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Birthday -->
-    <section class="about-section">
-      <h2><i class="fas fa-birthday-cake"></i> Birthday</h2>
-      <p>March 14, 2004</p>
+    <section class="menu-section">
+      <h2 class="section-title">Specialties & Skills</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3><i class="fas fa-heart"></i> Hobbies</h3>
+          <ul class="fancy-list">
+            <li><i class="fas fa-bicycle"></i> Biking</li>
+            <li><i class="fas fa-running"></i> Running</li>
+            <li><i class="fas fa-utensils"></i> Eating foods</li>
+            <li><i class="fas fa-laptop-code"></i> Coding</li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <h3><i class="fas fa-code"></i> Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item"><i class="fab fa-html5"></i> HTML/CSS</div>
+            <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Hobbies -->
-    <section class="about-section">
-      <h2><i class="fas fa-heart"></i> Hobbies</h2>
-      <ul>
-        <li><i class="fas fa-bicycle"></i> Biking</li>
-        <li><i class="fas fa-running"></i> Running</li>
-        <li><i class="fas fa-utensils"></i> Eating foods</li>
-        <li><i class="fas fa-laptop-code"></i> Coding</li>
-      </ul>
+    <section class="menu-section">
+      <h2 class="section-title">Favorites</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3><i class="fas fa-film"></i> Featured Films</h3>
+          <ul class="fancy-list">
+            <li><i class="fas fa-video"></i> Inception</li>
+            <li><i class="fas fa-video"></i> Interstellar</li>
+            <li><i class="fas fa-video"></i> The Social Network</li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <h3><i class="fas fa-music"></i> Sound Selection</h3>
+          <ul class="fancy-list">
+            <li><i class="fas fa-headphones"></i> The Weeknd</li>
+            <li><i class="fas fa-headphones"></i> Joji</li>
+            <li><i class="fas fa-headphones"></i> Lo-fi & Chillhop</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Favorite Movies -->
-    <section class="about-section">
-      <h2><i class="fas fa-film"></i> Favorite Movies</h2>
-      <ul>
-        <li>Inception</li>
-        <li>Interstellar</li>
-        <li>The Social Network</li>
-      </ul>
-    </section>
-
-    <!-- Favorite Music -->
-    <section class="about-section">
-      <h2><i class="fas fa-music"></i> Favorite Music & Artists</h2>
-      <ul>
-        <li>The Weeknd</li>
-        <li>Joji</li>
-        <li>Lo-fi & Chillhop</li>
-      </ul>
-    </section>
-
-    <!-- Skills -->
-    <section class="about-section">
-      <h2><i class="fas fa-tools"></i> Skills</h2>
-      <ul>
-        <li><i class="fab fa-html5"></i> HTML / CSS</li>
-        <li><i class="fab fa-js"></i> JavaScript</li>
-        <li><i class="fab fa-python"></i> Python</li>
-        <li><i class="fab fa-java"></i> Java</li>
-      </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer class="about-footer">
-      <p><i class="fas fa-envelope"></i> karlo@email.com</p>
-      <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    <footer class="menu-footer">
+      <div class="contact-info">
+        <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+      </div>
+      <div class="decorative-line"></div>
     </footer>
   </div>
 </body>
