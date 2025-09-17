@@ -18,31 +18,135 @@
 
     <div class="container">
         <div class="floating-expressions">
-            <div class="expression" style="--delay: 0s; --x: 25%; --y: 20%;">
+            <div class="expression" style="--delay: 0s; --x: 25%; --y: 18%;" onclick="openModal('modalMe')">
                 <img src="It's Me.png" alt="Hey! It's Me">
                 <span class="caption">Hey! It's Me</span>
             </div>
-            <div class="expression" style="--delay: 2s; --x: 80%; --y: 20%;">
+            <div class="expression" style="--delay: 0.8s; --x: 78%; --y: 20%;" onclick="openModal('modalDo')">
                 <img src="What I hate to do.png" alt="What I do">
                 <span class="caption">What I do</span>
             </div>
-            <div class="expression" style="--delay: 1s; --x: 53%; --y: 18%;">
+            <div class="expression" style="--delay: 1.6s; --x: 53%; --y: 25%;" onclick="openModal('modalHate')">
                 <img src="I hate to do.png" alt="What I hate">
                 <span class="caption">What I hate to do</span>
             </div>
-            <div class="expression" style="--delay: 3s; --x: 85%; --y: 66%;">
+            <div class="expression" style="--delay: 2.4s; --x: 85%; --y: 70%;" onclick="openModal('modalHobbies')">
                 <img src="My hobbies.png" alt="What are my hobbies">
                 <span class="caption">What are my hobbies</span>
             </div>
-            <div class="expression" style="--delay: 2.5s; --x: 15%; --y: 67%;">
+            <div class="expression" style="--delay: 3.2s; --x: 15%; --y: 67%;" onclick="openModal('modalCS')">
                 <img src="Why CS.png" alt="Why CS?">
                 <span class="caption">Why CS?</span>
             </div>
-            <div class="expression" style="--delay: 1.5s; --x: 50%; --y: 65%;">
+            <div class="expression" style="--delay: 4s; --x: 50%; --y: 65%;" onclick="openModal('modalFacts')">
                 <img src="Fun facts.png" alt="fun facts">
                 <span class="caption">fun facts</span>
             </div>
         </div>
     </div>
+
+    <!-- Modal for "Hey! It's Me" -->
+    <div id="modalMe" class="modal">
+        <div class="modal-content modal-me">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <img src="It's Me.png" alt="Karlo" class="modal-avatar">
+                <div>
+                    <h2 class="modal-title">Hey! It's Me;</h2>
+                    <p class="modal-subtitle">I'm Karlo Roel Montenegro a 3rd year BS Computer Science in West Visayas State University</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                You Can't Spell Awesome Without ME!
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for "What I do" -->
+    <div id="modalDo" class="modal">
+        <div class="modal-content modal-do">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <img src="What I hate to do.png" alt="What I do" class="modal-avatar">
+                <div>
+                    <h2 class="modal-title">What I Do</h2>
+                    <p class="modal-subtitle">My daily activities and passions</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                I love coding, creating websites, playing games, and learning new technologies. I spend most of my time building cool projects and solving programming challenges!
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for "What I hate to do" -->
+    <div id="modalHate" class="modal">
+        <div class="modal-content modal-hate">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <img src="I hate to do.png" alt="What I hate" class="modal-avatar">
+                <div>
+                    <h2 class="modal-title">What I Hate to Do</h2>
+                    <p class="modal-subtitle">Things that drain my energy</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                I really dislike doing boring repetitive tasks, waking up early in the morning, and dealing with buggy code that just won't work no matter what I try!
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for "What are my hobbies" -->
+    <div id="modalHobbies" class="modal">
+        <div class="modal-content modal-hobbies">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <img src="My hobbies.png" alt="My hobbies" class="modal-avatar">
+                <div>
+                    <h2 class="modal-title">What Are My Hobbies</h2>
+                    <p class="modal-subtitle">What I love to do in my free time</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                Gaming, watching anime, coding personal projects, learning new programming languages, and playing badminton.
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for "Why CS?" -->
+    <div id="modalCS" class="modal">
+        <div class="modal-content modal-cs">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <img src="Why CS.png" alt="Why CS" class="modal-avatar">
+                <div>
+                    <h2 class="modal-title">Why CS?</h2>
+                    <p class="modal-subtitle">My journey into Computer Science</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                I chose Computer Science because I love problem-solving and creating things that can impact people's lives. The field is always evolving, and there's always something new to learn!
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for "Fun facts" -->
+    <div id="modalFacts" class="modal">
+        <div class="modal-content modal-facts">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <img src="Fun facts.png" alt="Fun facts" class="modal-avatar">
+                <div>
+                    <h2 class="modal-title">Fun Facts</h2>
+                    <p class="modal-subtitle">Random things about me</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                I love eating, drinking, partying, binge watching, I can do everything except hold my breath for long. I cried last night because my dog died.
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -102,8 +102,8 @@
         }
 
         .expression img {
-            width: 350px;
-            height: 350px;
+            width: 420px;
+            height: 420px;
             object-fit: contain;
             transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
             filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15));
@@ -115,7 +115,7 @@
         }
 
         .expression:hover img {
-            transform: scale(0.9);
+            transform: scale(1.4);
             filter: drop-shadow(0 12px 24px rgba(0,0,0,0.25));
         }
 
@@ -182,7 +182,129 @@
             animation-delay: 4s; 
         }
 
-        @media (max-width: 768px) {
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #FFE4B5, #F0E68C);
+            margin: 20px;
+            padding: 30px;
+            border-radius: 25px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            transform: scale(0.8);
+            animation: modalPop 0.3s ease-out forwards;
+        }
+
+        @keyframes modalPop {
+            from { 
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to { 
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .modal-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+
+        .modal-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .modal-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #333;
+            margin: 0;
+        }
+
+        .modal-subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 5px 0 0 0;
+            line-height: 1.4;
+        }
+
+        .modal-body {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color: #666;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        /* Different modal colors for each expression */
+        .modal-content.modal-me {
+            background: linear-gradient(135deg, #FFE4B5, #F0E68C);
+        }
+
+        .modal-content.modal-do {
+            background: linear-gradient(135deg, #98FB98, #90EE90);
+        }
+
+        .modal-content.modal-hate {
+            background: linear-gradient(135deg, #FFB6C1, #FFA0B4);
+        }
+
+        .modal-content.modal-hobbies {
+            background: linear-gradient(135deg, #87CEEB, #87CEFA);
+        }
+
+        .modal-content.modal-cs {
+            background: linear-gradient(135deg, #DDA0DD, #DA70D6);
+        }
+
+        .modal-content.modal-facts {
+            background: linear-gradient(135deg, #F0E68C, #FFE4B5);
+        }
             .expression img {
                 width: 280px;
                 height: 280px;
@@ -197,8 +319,7 @@
             .text-line {
                 font-size: 25vw;
             }
-        }
-
+            
         @media (max-width: 480px) {
             .expression img {
                 width: 200px;
